@@ -49,18 +49,27 @@ const pizzaData = [
 function App() {
   return (
     <div>
-      <h1>hi</h1>
+      <Header />
       <Pizza />
       <Pizza />
       <Pizza />
+      <Footer/>
     </div>
   );
+}
+
+function Header() {
+  return <h1>Mama Jons Pizza</h1>;
+}
+function Menu() {}
+function Footer() {
+  return<footer> {new Date().toLocaleTimeString()}, We're currently open</footer>;
 }
 
 function Pizza() {
   return (
     <div>
-      <img src="pizzas/prosciutto.jpg" alt="Pizza Prosciutto"/>
+      <img src="pizzas/prosciutto.jpg" alt="Pizza Prosciutto" />
       <h2>Pizza Prosciutto</h2>
       <p>Tomato, mozarella, ham, aragula, and burrata cheese</p>
     </div>
