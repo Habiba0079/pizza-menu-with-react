@@ -60,7 +60,7 @@ function App() {
 function Header() {
   return (
     <header className="header">
-      <h1>Mama Jons Pizza</h1>;
+      <h1>Mama Johns Pizza</h1>;
     </header>
   );
 }
@@ -114,8 +114,8 @@ function Footer() {
         <p>
           {new Date().toLocaleTimeString()},
           {currentState
-            ? "We're currently OPEN untill 10:00 PM order now :)"
-            : "Sorry we are CLOSED, we will open again at 10:00 AM :'("}
+            ? `We're currently OPEN untill ${closeHour}:00 PM order now :)`
+            : `Sorry we are CLOSED, we will open again at ${operHour}:00 AM :'(`}
         </p>
         {currentState ? <button className="btn">Order</button> : ""}
       </div>
